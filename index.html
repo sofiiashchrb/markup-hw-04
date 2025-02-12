@@ -21,6 +21,7 @@
   <body>
     <header class="page-header">
       <div class="container">
+        <!-- wrong letter spacing in logo, portfolio too -->
         <a href="index.html" class="left-logo"
           >Web<span class="right-logo">Studio</span></a
         >
@@ -38,6 +39,7 @@
         </nav>
 
         <ul class="contact-nav">
+          <!-- wrong font-weight in items, should be 500 from figma -->
           <li class="item"><a href="index.html">info@devstudio.com</a></li>
           <li class="item"><a href="index.html">+38 096 111 11 11</a></li>
         </ul>
@@ -45,12 +47,15 @@
     </header>
 
     <main>
+      <!-- add a height to hero and center elements inside using flex-box -->
       <section class="hero">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
+        <!-- button width is wrong -->
         <button type="button" class="button">Замовити послугу</button>
       </section>
 
       <section class="advantages">
+        <!-- ul is not a container, container = div. ul it's a list tag, and for grouping we are using div's-->
         <ul class="container">
           <div class="item">
             <li>
@@ -92,13 +97,16 @@
           </div>
         </ul>
       </section>
+      <!-- there should be margin-bottom like in section above it, not padding. Padding is a workaround for sections below, but here we definetely should use a margin. We are not filling a space. -->
 
       <section class="about">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul>
+            <!-- we can use <li> only iside of parent ul, here parent is div. Put a full list inside div, not only li's -->
             <div class="images-box">
               <li class="item">
+                <!-- you shouldn't use a margin-right here. You can make a same functional using justify-content: space-between -->
                 <img src="images/about_1.jpg" alt="about_us_1" width="370" />
               </li>
               <li class="item">
@@ -111,13 +119,19 @@
           </ul>
         </div>
       </section>
+      <!-- here we need to use margin bottom too, as described earlier. It will look the same, but it will be correct -->
 
       <section class="our-team">
         <h2 class="title">Наша команда</h2>
+        <!-- there is also should be a margin-bottom, not padding -->
         <ul>
           <div class="container">
+            <!-- we can use <li> only iside of parent ul, here parent is div. Put a full list inside div, not only li's -->
             <li class="team-card">
+              <!-- you shouldn't use a margin-right here. You can make a same functional using justify-content: space-between -->
+
               <img src="images/team_1.jpg" alt="member_1" width="270" />
+              <!-- you should use margins here except of padding. We do not want to fill any space between name and trade  -->
               <h3 class="name">Ігор Дем'яненко</h3>
               <p class="trade">Product Designer</p>
             </li>
@@ -145,10 +159,12 @@
       <section class="footer">
         <div class="container">
           <div class="logo-container">
+            <!-- letter spacing again -->
             <a href="index.html" class="left-logo"
               >Web<span class="right-logo">Studio</span></a
             >
           </div>
+          <!-- margin here should be 28px, not 20 -->
           <address>
             <ul>
               <li class="coordination">
@@ -156,9 +172,12 @@
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
+              <!-- margin here 12px, not 9 -->
+              <!-- also, here font-weight is 400, when in header it's 500. Important detail. -->
               <li class="coordination">
                 <a href="index.html" class="contact-nav">info@devstudio.com</a>
               </li>
+              <!-- margin here 12px, not 9 -->
               <li class="coordination">
                 <a href="index.html" class="contact-nav">+38 096 111 11 11</a>
               </li>
