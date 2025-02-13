@@ -57,7 +57,7 @@ h6 {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 2.6px;
+  letter-spacing: 0.78px;
 }
 
 .right-logo {
@@ -66,7 +66,7 @@ h6 {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 2.6px;
+  letter-spacing: 0.78px;
 }
 
 .left-logo,
@@ -119,6 +119,7 @@ ul {
 .contact-nav {
   display: flex;
   margin-left: auto;
+  font-size: medium;
 }
 .contact-nav .item + .item {
   margin-left: 40px;
@@ -137,8 +138,14 @@ ul {
 
 /* primary section */
 .hero {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background-color: #2f303a;
-  text-align: center;
+
   margin-bottom: 94px;
 }
 
@@ -170,19 +177,19 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.921px;
   cursor: pointer;
   text-align: center;
   margin-top: 0;
   border: none;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
 }
 
 /* section advantages */
 .advantages {
   background-color: #fff;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .advantages .container {
@@ -219,7 +226,7 @@ ul {
 /* about us */
 .about {
   background-color: #fff;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 .about .title {
   color: var(--title-text-color);
@@ -233,13 +240,18 @@ ul {
   margin-bottom: 50px;
 }
 
-.about .images-box {
+.about .images-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.about .container .item:not(:last-child) {
+/* .about .container .item:not(:last-child) {
   margin-right: 30px;
+} */
+
+.images-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* our team */
@@ -251,14 +263,12 @@ ul {
   padding-bottom: 94px;
 }
 
-.our-team .container {
+.our-team .container .item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.our-team .container .team-card {
-  margin-right: 30px;
-}
 .our-team .container .team-card:nth-child(4n) {
   margin-right: 0;
 }
@@ -269,7 +279,7 @@ ul {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 1.08px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   /* rebase text align to parent container */
 }
 
@@ -308,7 +318,7 @@ ul {
 }
 
 .logo-container {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .footer .address {
   color: var(--primary-title-text-color);
@@ -320,7 +330,7 @@ ul {
 }
 
 .coordination:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .footer .address:hover,
@@ -366,13 +376,16 @@ ul {
   color: #ffffff;
 }
 
+.filters {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
 .filters .container {
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 .filters .container .item {
   margin-right: 8px;
@@ -384,6 +397,7 @@ ul {
 /* projects */
 .projects .title-hidden {
   visibility: hidden;
+  font-size: 0;
 }
 
 .projects {
