@@ -44,7 +44,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .page-header .container {
   display: flex;
@@ -119,7 +119,10 @@ ul {
 .contact-nav {
   display: flex;
   margin-left: auto;
-  font-size: medium;
+}
+
+.page-header .contact-nav {
+  font-weight: 500;
 }
 .contact-nav .item + .item {
   margin-left: 40px;
@@ -145,8 +148,6 @@ ul {
   align-items: center;
 
   background-color: #2f303a;
-
-  margin-bottom: 94px;
 }
 
 .hero .title {
@@ -177,7 +178,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.921px;
+  letter-spacing: 0.96px;
   cursor: pointer;
   text-align: center;
   margin-top: 0;
@@ -189,10 +190,11 @@ ul {
 /* section advantages */
 .advantages {
   background-color: #fff;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.advantages .container {
+.advantages .container .list {
   display: flex;
 }
 
@@ -226,7 +228,7 @@ ul {
 /* about us */
 .about {
   background-color: #fff;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .about .title {
   color: var(--title-text-color);
@@ -245,10 +247,6 @@ ul {
   flex-wrap: wrap;
 }
 
-/* .about .container .item:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .images-list {
   display: flex;
   justify-content: space-between;
@@ -263,7 +261,13 @@ ul {
   padding-bottom: 94px;
 }
 
-.our-team .container .item {
+/* .our-team .container  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.our-team .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -280,21 +284,22 @@ ul {
   line-height: 1.2;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
-  /* rebase text align to parent container */
 }
 
 .team-card {
   background-color: #ffffff;
 }
-
+.team-card .photo {
+  margin-bottom: 30px;
+}
 .team-card .name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.48px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+
+  margin-bottom: 10px;
 }
 
 .team-card .trade {
@@ -303,7 +308,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.48px;
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* footer */
@@ -363,6 +368,9 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.48px;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .filters .button-filter.current {
@@ -377,8 +385,8 @@ ul {
 }
 
 .filters {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 94px;
+  padding-bottom: 50px;
 }
 
 .filters .container {
@@ -401,10 +409,10 @@ ul {
 }
 
 .projects {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
-.projects .container {
+.projects .list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -414,6 +422,9 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+.projects .card .image {
+  margin-bottom: 20px;
 }
 
 .projects .card:nth-child(3n) {
@@ -429,7 +440,7 @@ ul {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .projects .card .text {
@@ -437,6 +448,6 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.48px;
-  margin-top: 4px;
-  margin-bottom: 20px;
+
+  margin: 0 0 20px 0;
 }
